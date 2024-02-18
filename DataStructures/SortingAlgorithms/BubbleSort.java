@@ -1,5 +1,4 @@
 import java.util.*;
-
 public class BubbleSort {
 	public static void bubbleSort(int[] arr, int N) {
 		boolean swapped = false;
