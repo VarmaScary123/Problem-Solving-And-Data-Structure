@@ -14,6 +14,7 @@ public class NoOfWaysForCoinDenomination {
     }
 
     public static int noOfWaysForCoinDenomination(int coins[], int N, int amount) {
+        // List<List<Integer>> result = new ArrayList<>();
         int dp[][] = new int[N][amount+1];
         for(int i=0;i<N;i++) {
             dp[i][0] = 1;
