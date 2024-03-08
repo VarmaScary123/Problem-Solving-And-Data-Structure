@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.*;
 
 public class CoinGame {
 
@@ -12,20 +12,22 @@ public class CoinGame {
                 table[i][j] = Math.max(arr[i] + Math.min(x, y), arr[j] + Math.min(y, z));
             }
         }
-        return table[0][n - 1];
+        int totalScore = Arrays.stream(arr).sum();
+        // Here, we return the difference between the maximum scores of player 1 and player 2
+        return (2 * table[0][n - 1]) - totalScore;
     }
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int T = sc.nextInt();
-        while(T-- > 0) {
+        while (T-- > 0) {
             int n = sc.nextInt();
             int arr[] = new int[n];
-    
+
             for (int i = 0; i < n; i++) {
                 arr[i] = sc.nextInt();
             }
-    
+
             System.out.println(winner(arr, n));
         }
         sc.close();
