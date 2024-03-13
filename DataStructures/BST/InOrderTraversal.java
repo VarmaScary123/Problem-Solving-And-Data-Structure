@@ -1,9 +1,8 @@
 package DataStructures.BST;
 
-import java.util.*;
+import java.util.Scanner;
 
-public class InsertInBST {
-
+public class InOrderTraversal {
     class Node {
         Node left;
         int data;
@@ -15,8 +14,7 @@ public class InsertInBST {
         }
     }
 
-    private static Node root = null;
-
+    private static Node root;
     public Node insert(Node node, int data) {
         if(node == null) return new Node(data);
 
@@ -26,25 +24,24 @@ public class InsertInBST {
         return node;
     }
 
-    public void display(Node root) {
+    public void inOrderTraversal(Node root) {
         if(root == null) return;
 
-        display(root.left);
+        inOrderTraversal(root.left);
         System.out.print(root.data+" ");
-        display(root.right);
+        inOrderTraversal(root.right);
     }
+
     public static void main(String arg[]) {
         Scanner sc = new Scanner(System.in);
         int N = sc.nextInt();
 
-        InsertInBST bst = new InsertInBST();
-        for(int i=0;i<N;i++) {
-            int data = sc.nextInt();
-            root = bst.insert(root, data);
-        }
+        InOrderTraversal io = new InOrderTraversal();
+        for(int i=0;i<N;i++)
+            root = io.insert(root, sc.nextInt());
 
-        bst.display(root);
+        io.inOrderTraversal(root);
+
         sc.close();
-
     }
 }
