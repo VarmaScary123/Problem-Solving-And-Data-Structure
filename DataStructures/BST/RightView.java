@@ -2,7 +2,7 @@ package DataStructures.BST;
 
 import java.util.Scanner;
 
-public class LeftView {
+public class RightView {
     class Node {
         Node left;
         int data;
@@ -37,13 +37,13 @@ public class LeftView {
         display(root.right);
     }
 
-    public void leftView() {
-        leftView(root, 1);
+    public void rightView() {
+        rightView(root, 1);
     }
 
     int maxLevel = 0;
 
-    public void leftView(Node root, int level) {
+    public void rightView(Node root, int level) {
         if (root == null)
             return;
 
@@ -52,22 +52,22 @@ public class LeftView {
             maxLevel = level;
         }
 
-        leftView(root.left, level + 1);
-        leftView(root.right, level + 1);
+        rightView(root.right, level + 1);
+        rightView(root.left, level + 1);
     }
 
     public static void main(String arg[]) {
         Scanner sc = new Scanner(System.in);
         int N = sc.nextInt();
-        LeftView lv = new LeftView();
+        RightView rv = new RightView();
 
         for (int i = 0; i < N; i++)
-            root = lv.insert(root, sc.nextInt());
+            root = rv.insert(root, sc.nextInt());
 
-        lv.display(root);
-
-        System.out.print("\nLeft View ->");
-        lv.leftView();
         sc.close();
+
+        rv.display(root);
+        System.out.print("\nRight View : ");
+        rv.rightView();
     }
 }
