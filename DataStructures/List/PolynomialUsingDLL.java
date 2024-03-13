@@ -1,4 +1,4 @@
-package DataStructures.TreeDataStructure;
+package DataStructures.List;
 
 import java.util.*;
 
