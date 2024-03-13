@@ -16,19 +16,23 @@ public class PreOrderTraversal {
 
     private static Node root;
 
-    public Node insert(Node node, int data){
-        if(node == null) return new Node(data);
+    public Node insert(Node node, int data) {
+        if (node == null)
+            return new Node(data);
 
-        if(data < root.data) node.left = insert(node.left, data);
-        else if(data > root.data) node.right = insert(node.right, data);
+        if (data < root.data)
+            node.left = insert(node.left, data);
+        else if (data > root.data)
+            node.right = insert(node.right, data);
 
         return node;
     }
 
     public void preOrderTraversal(Node root) {
-        if(root == null) return;
+        if (root == null)
+            return;
 
-        System.out.print(root.data+" ");
+        System.out.print(root.data + " ");
         preOrderTraversal(root.left);
         preOrderTraversal(root.right);
     }
@@ -38,9 +42,9 @@ public class PreOrderTraversal {
         int N = sc.nextInt();
 
         PreOrderTraversal po = new PreOrderTraversal();
-        for(int i=0;i<N;i++)
+        for (int i = 0; i < N; i++)
             root = po.insert(root, sc.nextInt());
-        
+
         po.preOrderTraversal(root);
         sc.close();
     }

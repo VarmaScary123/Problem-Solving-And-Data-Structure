@@ -18,27 +18,32 @@ public class InsertInBST {
     private static Node root = null;
 
     public Node insert(Node node, int data) {
-        if(node == null) return new Node(data);
+        if (node == null)
+            return new Node(data);
 
-        if(data < node.data) node.left = insert(node.left, data);
-        else if(data > node.data) node.right = insert(node.right, data);
+        if (data < node.data)
+            node.left = insert(node.left, data);
+        else if (data > node.data)
+            node.right = insert(node.right, data);
 
         return node;
     }
 
     public void display(Node root) {
-        if(root == null) return;
+        if (root == null)
+            return;
 
         display(root.left);
-        System.out.print(root.data+" ");
+        System.out.print(root.data + " ");
         display(root.right);
     }
+
     public static void main(String arg[]) {
         Scanner sc = new Scanner(System.in);
         int N = sc.nextInt();
 
         InsertInBST bst = new InsertInBST();
-        for(int i=0;i<N;i++) {
+        for (int i = 0; i < N; i++) {
             int data = sc.nextInt();
             root = bst.insert(root, data);
         }

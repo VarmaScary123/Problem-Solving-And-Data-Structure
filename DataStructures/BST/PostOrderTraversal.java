@@ -29,7 +29,8 @@ public class PostOrderTraversal {
     }
 
     public void postOrderTraversal(Node root) {
-        if (root == null) return;
+        if (root == null)
+            return;
 
         postOrderTraversal(root.left);
         postOrderTraversal(root.right);
