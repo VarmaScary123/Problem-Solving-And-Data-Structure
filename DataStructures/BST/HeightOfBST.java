@@ -17,19 +17,23 @@ public class HeightOfBST {
     private static Node root = null;
 
     public Node insert(Node node, int data) {
-        if(node == null) return new Node(data);
+        if (node == null)
+            return new Node(data);
 
-        if(data < node.data) node.left = insert(node.left, data);
-        else if(data > node.data) node.right = insert(node.right, data);
+        if (data < node.data)
+            node.left = insert(node.left, data);
+        else if (data > node.data)
+            node.right = insert(node.right, data);
 
         return node;
     }
 
     public void display(Node root) {
-        if(root == null) return;
+        if (root == null)
+            return;
 
         display(root.left);
-        System.out.print(root.data+" ");
+        System.out.print(root.data + " ");
         display(root.right);
     }
 
@@ -38,7 +42,8 @@ public class HeightOfBST {
     }
 
     public int height(Node root) {
-        if(root == null) return 0;
+        if (root == null)
+            return 0;
         else {
             int leftHeight = height(root.left);
             int rightHeight = height(root.right);
@@ -52,7 +57,7 @@ public class HeightOfBST {
         int N = sc.nextInt();
         HeightOfBST h = new HeightOfBST();
 
-        for(int i=0;i<N;i++)
+        for (int i = 0; i < N; i++)
             root = h.insert(root, sc.nextInt());
 
         sc.close();

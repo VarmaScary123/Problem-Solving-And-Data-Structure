@@ -17,19 +17,23 @@ public class ValidBST {
     private static Node root = null;
 
     public Node insert(Node node, int data) {
-        if(node == null) return new Node(data);
+        if (node == null)
+            return new Node(data);
 
-        if(data < node.data) node.left = insert(node.left, data);
-        else if(data > node.data) node.right = insert(node.right, data);
+        if (data < node.data)
+            node.left = insert(node.left, data);
+        else if (data > node.data)
+            node.right = insert(node.right, data);
 
         return node;
     }
 
     public void display(Node root) {
-        if(root == null) return;
+        if (root == null)
+            return;
 
         display(root.left);
-        System.out.print(root.data+" ");
+        System.out.print(root.data + " ");
         display(root.right);
     }
 
@@ -38,9 +42,11 @@ public class ValidBST {
     }
 
     public boolean validBST(Node root, int min, int max) {
-        if(root == null) return true;
+        if (root == null)
+            return true;
 
-        if(root.data < min || root.data > max) return false;
+        if (root.data < min || root.data > max)
+            return false;
 
         return validBST(root.left, min, root.data) && validBST(root.right, root.data, max);
     }
@@ -49,15 +55,17 @@ public class ValidBST {
         Scanner sc = new Scanner(System.in);
         int N = sc.nextInt();
         ValidBST va = new ValidBST();
-        
-        for(int i=0;i<N;i++)
+
+        for (int i = 0; i < N; i++)
             root = va.insert(root, sc.nextInt());
 
         sc.close();
 
         va.display(root);
 
-        if(va.isValidBST(root)) System.out.println("Valid BST");
-        else System.out.println("Not a Valid BST");
+        if (va.isValidBST(root))
+            System.out.println("Valid BST");
+        else
+            System.out.println("Not a Valid BST");
     }
 }

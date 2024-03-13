@@ -15,20 +15,25 @@ public class InOrderTraversal {
     }
 
     private static Node root;
-    public Node insert(Node node, int data) {
-        if(node == null) return new Node(data);
 
-        if(data < node.data) node.left = insert(node.left, data);
-        else if(data > node.data) node.right = insert(node.right, data);
+    public Node insert(Node node, int data) {
+        if (node == null)
+            return new Node(data);
+
+        if (data < node.data)
+            node.left = insert(node.left, data);
+        else if (data > node.data)
+            node.right = insert(node.right, data);
 
         return node;
     }
 
     public void inOrderTraversal(Node root) {
-        if(root == null) return;
+        if (root == null)
+            return;
 
         inOrderTraversal(root.left);
-        System.out.print(root.data+" ");
+        System.out.print(root.data + " ");
         inOrderTraversal(root.right);
     }
 
@@ -37,7 +42,7 @@ public class InOrderTraversal {
         int N = sc.nextInt();
 
         InOrderTraversal io = new InOrderTraversal();
-        for(int i=0;i<N;i++)
+        for (int i = 0; i < N; i++)
             root = io.insert(root, sc.nextInt());
 
         io.inOrderTraversal(root);
