@@ -1,5 +1,8 @@
 /*
-    Sudoku problem
+    Solve Sudoku
+
+    Given an incomplete Sudoku configuration in terms of a 9 x 9 2-D square matrix (mat[][]). The task to print a solved Sudoku. For
+    simplicity you may assume that there will be only one unique solution.
 
     Each test case contains 9*9 space separated values of the matrix mat[][] representing an incomplete Sudoku state where a 0 represents
     empty block.
