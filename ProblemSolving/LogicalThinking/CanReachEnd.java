@@ -27,8 +27,8 @@
 
     Sample Output 2
     False
- */
-
+*/
+package LogicalThinking;
 import java.util.*;
 public class CanReachEnd {
     public static void main(String[] args) {

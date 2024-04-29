@@ -17,10 +17,9 @@ F - is the federal source of pipe C - is the sink/destination of pipe (cluster t
 Input 2 3 C1 100 300 C2 150 300 C3 100 100 3 F_C1 F_C2 C2_C3 Output 1100 In the above on day 1, C1 gets 300, C2 gets 300, C3 gets 100 End of day 1, C1 would have 200, C2 would have 150, C3 would have 0
 
 On start of day 2, C3 needs water. To supply water to C3, water needs to flow through C2. C2 would immediately drain the remaining water for other purpose so that it can fill water tank fully again from federal body.​
- */
-
+*/
+package LogicalThinking;
 import java.util.*;
-
 public class WaterWorldProblem {
     public static void main(String arg[]) {
         Scanner sc = new Scanner(System.in);

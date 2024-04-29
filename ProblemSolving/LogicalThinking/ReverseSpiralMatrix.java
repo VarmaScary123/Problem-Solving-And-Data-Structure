@@ -1,3 +1,5 @@
+package LogicalThinking;
+
 import java.util.*;
 public class ReverseSpiralMatrix{
     public static void main(String h[])

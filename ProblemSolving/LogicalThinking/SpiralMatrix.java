@@ -1,7 +1,8 @@
 /*
-    Print the matrix in Spiral Manner for N*M matrix
- */
+Print the matrix in Spiral Manner for N*M matrix
+*/
 
+package LogicalThinking;
 import java.util.*;
 public class SpiralMatrix {
     

@@ -1,3 +1,5 @@
+package LogicalThinking;
+
 /*
     For a given word check if it is a MASTER word
     A master word is a word which follows the following rules:
