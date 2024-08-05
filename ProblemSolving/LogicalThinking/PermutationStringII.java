@@ -29,7 +29,7 @@ public class PermutationStringII {
             char rightChar = s2.charAt(right);
             windowCount.put(rightChar, windowCount.getOrDefault(rightChar, 0) + 1);
 
-            if(s1Count.containsKey(rightChar) && windowCount.get(rightChar) == s1Count.get(rightChar)) 
+            if(s1Count.containsKey(rightChar) && windowCount.get(rightChar).equals(s1Count.get(rightChar)))
                 formed ++;
 
             while(left <= right && formed == required) {
