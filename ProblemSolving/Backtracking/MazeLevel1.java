@@ -29,12 +29,10 @@ public class MazeLevel1 {
             return true;
         }
 
-        if(i>=0 && i<N && j>=0 && j<N && arr[i][j] == 0 && sol[i][j] == 0) {
+        if(i>=0 && i<N && j>=0 && j<N && arr[i][j] == 0) {
             sol[i][j] = 1;
             if(findSolution(i+1, j, arr, sol, N)) return true;
             if(findSolution(i, j+1, arr, sol, N)) return true;
-            if(findSolution(i-1, j, arr, sol, N)) return true;
-            if(findSolution(i, j-1, arr, sol, N)) return true;
 
             sol[i][j] = 0;
             return false;
