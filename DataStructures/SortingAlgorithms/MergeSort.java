@@ -1,3 +1,5 @@
+package DataStructures.SortingAlgorithms;
+
 import java.util.*;
 
 public class MergeSort {
