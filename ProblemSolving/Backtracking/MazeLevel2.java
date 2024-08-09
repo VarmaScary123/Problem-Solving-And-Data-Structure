@@ -11,7 +11,7 @@ import java.util.Scanner;
  * 
  * The maze is Given as Binary Matrix, where it is marked with 0, it is a valid path, otherwise 1 for a blocked cel.
  * 
- * NOTE : The rat only movein two directions, Left to Right, Right to Left, Top to Bottom, Bottom to Top
+ * NOTE : The rat only movein four directions, Left to Right, Right to Left, Top to Bottom, Bottom to Top
  * 
  */
 
