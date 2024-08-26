@@ -1,4 +1,4 @@
-package LogicalThinking;
+package Backtracking;
 
 import java.util.*;
 public class AllPossibleCombinations {
