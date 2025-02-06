@@ -29,7 +29,13 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class TupleWithSameProduct {
-    public int tupleSameProduct(int[] nums) {
+
+    public static void main(String arg[]) {
+        int[] nums = {1, 2, 4, 5, 10};
+        System.out.println(tupleSameProduct(nums));
+    }
+
+    public static int tupleSameProduct(int[] nums) {
         int count = 0;
         Map<Integer, Integer> map = new HashMap<>();
 
@@ -40,6 +46,8 @@ public class TupleWithSameProduct {
                 map.put(product, map.getOrDefault(product, 0) + 1);
             }
         } 
+
+        System.out.println(map);
         return count;
     }
 }
