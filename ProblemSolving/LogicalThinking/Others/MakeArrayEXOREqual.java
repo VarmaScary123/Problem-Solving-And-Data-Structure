@@ -34,7 +34,7 @@
 
  */
 
-package LogicalThinking;
+package LogicalThinking.Others;
 
 import java.util.*;
 

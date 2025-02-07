@@ -27,7 +27,7 @@
     t.length == s.length
     s and t consist of any valid ascii character.
  */
-package LogicalThinking;
+package LogicalThinking.Others;
 
 import java.util.Scanner;
 import java.util.Map;

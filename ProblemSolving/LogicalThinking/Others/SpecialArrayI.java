@@ -1,4 +1,4 @@
-package LogicalThinking;
+package LogicalThinking.Others;
 
 /*
     An array is considered special if every pair of its adjacent elements contains two numbers with different parity.

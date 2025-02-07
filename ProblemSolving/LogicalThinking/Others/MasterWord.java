@@ -1,4 +1,4 @@
-package LogicalThinking;
+package LogicalThinking.Others;
 
 /*
     For a given word check if it is a MASTER word

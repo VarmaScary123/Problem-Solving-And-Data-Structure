@@ -18,7 +18,7 @@ Input 2 3 C1 100 300 C2 150 300 C3 100 100 3 F_C1 F_C2 C2_C3 Output 1100 In the 
 
 On start of day 2, C3 needs water. To supply water to C3, water needs to flow through C2. C2 would immediately drain the remaining water for other purpose so that it can fill water tank fully again from federal body.​
 */
-package LogicalThinking;
+package LogicalThinking.Others;
 import java.util.*;
 public class WaterWorldProblem {
     public static void main(String arg[]) {

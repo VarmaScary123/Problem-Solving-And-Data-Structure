@@ -29,7 +29,7 @@
 
     1 <= n <= 231 - 1
  */
-package LogicalThinking;
+package LogicalThinking.Others;
 
 import java.util.Scanner;
 

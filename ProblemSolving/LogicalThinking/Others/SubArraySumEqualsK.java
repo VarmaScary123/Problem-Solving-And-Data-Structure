@@ -22,7 +22,7 @@
     -107 <= k <= 107
  */
 
-package LogicalThinking;
+package LogicalThinking.Others;
 
 import java.util.HashMap;
 import java.util.Scanner;

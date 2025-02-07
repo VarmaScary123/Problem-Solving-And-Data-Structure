@@ -1,4 +1,4 @@
-package LogicalThinking;
+package LogicalThinking.Others;
 
 /*
     Given an integer n, return a string array answer (1-indexed) where:

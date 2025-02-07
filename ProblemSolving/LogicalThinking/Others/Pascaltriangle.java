@@ -1,4 +1,4 @@
-package LogicalThinking;
+package LogicalThinking.Others;
 
 import java.util.ArrayList;
 import java.util.List;

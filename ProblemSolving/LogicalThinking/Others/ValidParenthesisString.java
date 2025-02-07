@@ -28,7 +28,7 @@
     1 <= s.length <= 100
     s[i] is '(', ')' or '*'.
  */
-package LogicalThinking;
+package LogicalThinking.Others;
 
 import java.util.Scanner;
 

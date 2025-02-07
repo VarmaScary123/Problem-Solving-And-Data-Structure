@@ -1,4 +1,4 @@
-package LogicalThinking;
+package LogicalThinking.Others;
 
 /*
  * Given an array nums of distinct positive integers, return the number of tuples (a, b, c, d) such that

@@ -1,4 +1,4 @@
-package LogicalThinking;
+package LogicalThinking.Others;
 
 /*
     Given an array of positive integers nums, return the maximum possible sum of an ascending subarray in nums.

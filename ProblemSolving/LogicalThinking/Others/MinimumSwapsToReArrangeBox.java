@@ -1,4 +1,4 @@
-package LogicalThinking;
+package LogicalThinking.Others;
 
 /*
     Red and Green Balls You have a square grid (NxN). Each cell of the grid has either a red ball or a green ball. Your job is to arrange the balls in such a way that all the red balls are either on or below
