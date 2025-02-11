@@ -3,7 +3,7 @@ package LogicalThinking.Others;
 import java.util.*;
 public class PaintTheWalls {
     
-    static int count = 0;
+    public static int count = 0;
     
     public static void main(String arg[]) {
         Scanner sc = new Scanner(System.in);
@@ -24,7 +24,7 @@ public class PaintTheWalls {
         sc.close();
     }
     
-    static int[][] dirs = {{1, 0}, {0, 1}, {-1, 0}, {0, -1}, {-1, 1}, {1, -1}, {1, 1}, {-1, -1}};
+    public static int[][] dirs = {{1, 0}, {0, 1}, {-1, 0}, {0, -1}, {-1, 1}, {1, -1}, {1, 1}, {-1, -1}};
     
     public static void fillTheWalls(int[][] arr, int N, int M) {
         
