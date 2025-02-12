@@ -13,7 +13,7 @@ public class BFSGraph {
 
     public void addEdge(int V, int W) {
         adj.get(V).add(W);
-        // adj.get(W).add(V);
+        adj.get(W).add(V);
     }
 
     public void BFS(int S) {
