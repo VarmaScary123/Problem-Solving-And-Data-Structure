@@ -9,8 +9,7 @@ import java.util.Scanner;
  * bottom right cell repectively. Some cells are valid to move and some cells are blocked. If one rat starts moving from start vertex, 
  * we have to find that is there any way to complete the path, if it is possible then mark the correct path for the rat.
  * 
- * The maze is Given as Binary Matrix, where it is marked with 0, it is a valid path, otherwise 1 for a blocked cel.
- * 
+ * The maze is Given as Binary Matrix, where it is marked with 0, it is a valid path, otherwise 1 for a blocked cell
  * NOTE : The rat only movein four directions, Left to Right, Right to Left, Top to Bottom, Bottom to Top
  * 
  */
